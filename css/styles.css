@@ -1,3 +1,7 @@
+* {
+	outline: 2px solid tomato;
+}
+
 :root {
 	--primary-text-color: #212121;
 	--secondary-text-color: #757575;
@@ -15,6 +19,27 @@ body {
 	letter-spacing: 0.03em;
 	background-color: var(--white-background-color);
 	color: var(--primary-text-color);
+}
+
+/* глобальный сброс margin, padding */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 /* удаляю точки списков */
@@ -40,6 +65,38 @@ body {
 }
 
 /* Header content */
+.header {
+	border-bottom: 1px solid #ECECEC;
+}
+
+.header-container {
+	display: flex;
+	align-items: center;
+}
+
+.header-nav {
+	display: flex;
+	align-items: center;
+}
+
+.site-nav {
+	display: flex;
+	margin-left: 93px;
+}
+
+.site-nav-item:not(:first-child) {
+	margin-left: 50px;	
+}
+
+.contact-nav.list {
+	display: flex;
+	margin-left: auto;
+}
+
+.contact-nav-item + .contact-nav-item {
+	margin-left: 50px;
+}
+
 .logo {
 	font-family: "Raleway", sans-serif;
 	font-weight: 700;
@@ -53,6 +110,10 @@ body {
 }
 
 .site-nav .link {
+	display: block;
+	padding-top: 32px;
+	padding-bottom: 32px;
+
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
