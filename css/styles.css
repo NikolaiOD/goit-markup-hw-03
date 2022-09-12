@@ -99,7 +99,7 @@ img {
 	margin-left: auto;
 }
 
-.contact-nav-item + .contact-nav-item {
+.contact-nav-item:not(:first-child) {
 	margin-left: 50px;
 }
 
@@ -395,6 +395,7 @@ img {
 .card-content {
 	padding: 20px 24px;
 	border: 1px solid #eeeeee;
+	border-top: none;
 }
 
 .portfolio-list-title {
